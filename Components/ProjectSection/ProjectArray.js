@@ -24,6 +24,48 @@ const ProjectArray = [
   },
   {
     id: 2,
+    desktopImage: "/Audiophile-Desktop.JPG",
+    mobileImage: "/Audiophile-Mobile.png",
+    name: "Audiophile E-Commerce",
+    description:
+      "Audiophile E-Commerce is an ongoing modern, high-fidelity shopping experience. It’s designed to feel clean, fast, and immersive. It is the storefront of a premium audio brand. It delivers a fast, immersive interface worthy of a premium audio brand, built with clean component architecture, smooth page transitions, and dynamic routing. The build leans heavily on performance, accessibility, and type-safe development to create a polished, scalable foundation. Although the interface is already refined across mobile, tablet, and desktop, the project continues to evolve with major features in active development, including a full checkout pipeline, Convex-backed order storage, and responsive confirmation emails.",
+    cardDescription:
+      "Audiophile E-Commerce is an ongoing modern, high-fidelity shopping experience.It’s designed to feel clean, fast, and immersive....",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Convex",
+      "Resend API",
+      "React Hook Form",
+      "Framer Motion",
+      "Context API",
+    ],
+    visitProject: "https://audiophile-e-commerce-ten-beta.vercel.app/",
+    visitRepo: "https://github.com/sagittaerys/audiophile-e-commerce",
+  },
+  {
+    id: 3,
+    desktopImage: "/Framez-Desktop.JPG",
+    mobileImage: "/Framez-Mobile.png",
+    name: "Framez Mobile Social App",
+    description:
+      "Framez is a mobile-first social platform built with React Native, designed for sharing moments with clarity and simplicity. It captures the essence of a modern social feed: real-time updates, fluid navigation, and clean interface structure. Users can create posts, browse a communal feed, and view their own profile with all personal activity displayed elegantly. The build integrates secure authentication and persistent sessions, backed by a real-time database layer to keep the experience responsive and alive. While core features like posting, feed rendering, and profile views are already functional, the project continues to evolve with polishing, performance tuning, and deeper backend integration. Framez stands as a growing testament to mobile craftsmanship with merging UI discipline, real-time data handling, and end-to-end user flows into one cohesive app.",
+    cardDescription:
+      "Framez is a social mobile app built with React Native, offering real-time posting, a shared feed, and user profiles...",
+    techStack: [
+      "React Native (Expo)",
+      "TypeScript",
+      "Supabase",
+      "Context API",
+      "Zustand",
+      "Expo Router",
+    ],
+    visitProject: "https://appetize.io/app/b_n6x3ccth4asdwrwjkiddyxy774",
+    visitRepo: "https://github.com/sagittaerys/framez-app",
+  },
+  {
+    id: 4,
     desktopImage: "/Sagittaerean-Screenshot.JPG",
     mobileImage: "/Sagittaerean-Mobile.png",
     name: "Sagittaerean Mall",
@@ -45,7 +87,7 @@ const ProjectArray = [
     visitRepo: "https://github.com/sagittaerys/e-commerce-web",
   },
   {
-    id: 3,
+    id: 5,
     desktopImage: "/Portfolio-Screenshot.JPG",
     mobileImage: "/Portfolio-Mobile.png",
     name: "My Portfolio",
@@ -65,6 +107,5 @@ const ProjectArray = [
     visitRepo: "https://github.com/sagittaerys/portfolio-next-js",
   },
 ];
-
 
 export default ProjectArray;

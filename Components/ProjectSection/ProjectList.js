@@ -1,11 +1,12 @@
 import ProjectArray from "./ProjectArray";
 import ProjectCard from "./ProjectCard";
 
-export default function ProjectList(){
-  return(
-    <div className="flex flex-col w-[100%] md:flex-row justify-evenly gap-6">
-        {ProjectArray.map((projects) => ( <ProjectCard key={projects.id} {...projects} /> ))}
+export default function ProjectList() {
+  return (
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {ProjectArray.map((projects) => (
+        <ProjectCard key={projects.id} {...projects} />
+      ))}
     </div>
-  )
-  
+  );
 }
