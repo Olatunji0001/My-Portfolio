@@ -147,7 +147,7 @@ const ProjectList = () => {
         ))}
 
         {/* nav btns */}
-        <div className=" absolute top-1/2 -translate-y-1/2 w-full px-4 md:px-10 flex justify-between pointer-events-none z-10">
+        <div className=" absolute top-1/2 -translate-y-1/2 w-full px-4 md:px-10 flex justify-between pointer-events-none z-1">
           <button
             onClick={() => navigate(-1)}
             className="hidden md:block pointer-events-auto text-[#A78BFA] text-4xl backdrop-blur-sm p-4 rounded-full  border border-[#A78BFA]/30 transition-all hover:scale-110"

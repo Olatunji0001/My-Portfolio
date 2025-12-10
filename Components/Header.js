@@ -13,7 +13,7 @@ export default function Header() {
   };
 
   return (
-    <div className="container fade-in sticky z-10 top-0 bg-[#1E1E1E] md:px-10 md:py-7  p-5">
+    <div className="container sticky z-10 top-0 bg-[#1E1E1E] md:px-10 md:py-7  p-5">
       <div className="relative flex justify-between md:max-w-[100%] items-center">
       <Link className="w-[15%] flex items-center" href="/">
         <h1 className="test-font tracking-wider text-[24px] font-extrabold text-[#FFFFFF] ">
@@ -26,7 +26,7 @@ export default function Header() {
 
       <div className="hidden md:block">
         <div className="nav-list w-[65%] flex items-center text-[15px] text-[#C1C1C1] items-baseline space-x-5 ">
-          <Link className="hover:text-[#A78BFA]" href="/">
+          <Link className="hover:text-[#A78BFA] transition-colors duration-300" href="/">
             Home
           </Link>
 
@@ -105,7 +105,7 @@ export default function Header() {
           isOpen ? "block" : "hidden"
         } absolute z-20 top-10  right-0 md:hidden`}
       >
-        <div className="nav-links text-center px-2 pt-2 pb-3 space-y-1 sm:px-3 text-[15px] text-[#FFFFFF] bg-[#1E1E1E]">
+        <div className="nav-list text-center px-2 pt-2 pb-3 space-y-1 sm:px-3 text-[15px] text-[#FFFFFF] bg-[#1E1E1E]">
           <Link
             href="/"
             className="hover:text-[#A78BFA] block px-3 py-2 "
