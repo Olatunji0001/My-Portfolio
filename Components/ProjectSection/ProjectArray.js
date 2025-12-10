@@ -1,4 +1,4 @@
-const ProjectArray = [
+const projects = [
   {
     id: 1,
     desktopImage: "/CodeStreak-Desktop.JPG",
@@ -108,4 +108,4 @@ const ProjectArray = [
   },
 ];
 
-export default ProjectArray;
+export default projects;
