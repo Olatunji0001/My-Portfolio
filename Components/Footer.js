@@ -2,6 +2,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { CiMail } from "react-icons/ci";
+import { FaLinkedinIn } from "react-icons/fa";
+
 
 export default function Footer(){
   return(
@@ -13,25 +15,31 @@ export default function Footer(){
             target="_blank"
             rel="noopener noreferrer"
             >
-            <CiMail />
+            <CiMail className="text-2xl" />
             </a>
             <a href="https://www.instagram.com/sagittaerys_?igsh=MTkxbm5xd3NrZGVobA%3D%3D&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             >
-              <FaInstagram />
+              <FaInstagram className="text-2xl" />
             </a>
             <a href="https://x.com/sagittaric?s=21"
             target="_blank"
             rel="noopener noreferrer"
             >
-             <FaXTwitter />
+             <FaXTwitter className="text-2xl" />
             </a>
             <a href="https://github.com/sagittaerys"
             target="_blank"
             rel="noopener noreferrer"
             >
-            <IoLogoGithub />
+            <IoLogoGithub className="text-2xl" />
+            </a>
+            <a href="https://www.linkedin.com/in/olamilekan-aremu-a15651236/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <FaLinkedinIn className="text-2xl"/>  
             </a>
           </div>
     </div>

@@ -1,107 +1,11 @@
 "use client";
 
 import projects from "./ProjectArray";
-import { useState } from "react";
+import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import { IoIosArrowForward } from "react-icons/io";
+import { useState } from "react";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { FaCircleArrowLeft } from "react-icons/fa6";
-
-// Project Card Component
-const ProjectCard = ({ project, position, index, currentIndex, onClick }) => {
-  const { id, desktopImage, name, cardDescription } = project;
-
-  const variants = {
-    center: {
-      x: "0%",
-      scale: 1,
-      opacity: 1,
-      zIndex: 5,
-      filter: "blur(0px)",
-    },
-    left: {
-      x: "-60%",
-      scale: 0.7,
-      opacity: 0.5,
-      zIndex: 1,
-      filter: "blur(2px)",
-    },
-    right: {
-      x: "60%",
-      scale: 0.7,
-      opacity: 0.5,
-      zIndex: 1,
-      filter: "blur(2px)",
-    },
-    hidden: {
-      x: position === "left" ? "-80%" : "80%",
-      scale: 0.5,
-      opacity: 0,
-      zIndex: 0,
-    },
-  };
-
-  const isCenter = position === "center";
-
-  return (
-    <motion.div
-      variants={variants}
-      animate={position}
-      initial="hidden"
-      transition={{
-        type: "spring",
-        stiffness: 300,
-        damping: 30,
-      }}
-      onClick={() => !isCenter && onClick(index)}
-      className="absolute w-[90%] md:w-[60%]"
-      style={{
-        top: "50%",
-        left: "50%",
-        translateX: "-50%",
-        translateY: "-50%",
-        pointerEvents: isCenter ? "auto" : "all",
-        cursor: isCenter ? "default" : "pointer",
-      }}
-    >
-      <div className="md:w-[100%] container border border-[#A78BFA] rounded-xl text-white">
-        <div className={isCenter ? "cursor-default" : "cursor-pointer"}>
-          <div>
-            <Image
-              className="mb-3 rounded-t-xl w-full h-auto object-cover"
-              src={desktopImage}
-              width={800}
-              height={600}
-              alt={name}
-            />
-            <div className="p-6">
-              <h2 className="md:text-[17px] text-[14px] font-bold mb-3">
-                {name}
-              </h2>
-
-              <p className="md:font-regular text-[13px] md:text-[15px]">
-                {cardDescription}
-              </p>
-
-              {isCenter && (
-                <Link href={`/Project/${id}`}>
-                  <button className="rounded-full hover:bg-[#A78BFA] mx-auto mt-4 text-[14px] border border-[#A78BFA] w-[164px] h-[41px] hover:scale-105 transition-all duration-300">
-                    <div className="flex items-center hover:gap-5 justify-center gap-3 transition-all duration-300">
-                      <p>View Project</p>
-                      <IoIosArrowForward className="text-white font-bold" />
-                    </div>
-                  </button>
-                </Link>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
-    </motion.div>
-  );
-};
 
 const ProjectList = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -129,12 +33,29 @@ const ProjectList = () => {
     setCurrentIndex(index);
   };
 
+  // Handle drag end to determine swipe direction
+  const handleDragEnd = (event, info) => {
+    const swipeThreshold = 50;
+    
+    if (info.offset.x > swipeThreshold) {
+      navigate(-1);
+    } else if (info.offset.x < -swipeThreshold) {
+      navigate(1);
+    }
+  };
+
   return (
     <div className="w-full min-h-screen overflow-hidden ">
       {/* header */}
      
       {/* main container*/}
-      <div className="relative h-[600px] md:h-[700px] max-w-6xl mx-auto">
+      <motion.div 
+        className="relative h-[700px] md:h-[700px] max-w-6xl mx-auto"
+        drag="x"
+        dragConstraints={{ left: 0, right: 0 }}
+        dragElastic={0.2}
+        onDragEnd={handleDragEnd}
+      >
         {projects.map((project, index) => (
           <ProjectCard
             key={project.id}
@@ -161,7 +82,7 @@ const ProjectList = () => {
             <FaCircleArrowRight />
           </button>
         </div>
-      </div>
+      </motion.div>
 
      
     </div>

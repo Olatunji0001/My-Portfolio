@@ -30,18 +30,18 @@ export default function Header() {
             Home
           </Link>
 
-          <Link className="hover:text-[#A78BFA]" href="#about">
+          <Link className="hover:text-[#A78BFA] transition-colors duration-300" href="#about">
             About
           </Link>
 
-          <Link className="hover:text-[#A78BFA]" href="#projects">
+          <Link className="hover:text-[#A78BFA] transition-colors duration-300" href="#projects">
             Projects
           </Link>
 
-          <Link className="hover:text-[#A78BFA]" href="#services">
+          <Link className="hover:text-[#A78BFA] transition-colors duration-300" href="#services">
             Services
           </Link>
-          <Link className="hover:text-[#A78BFA]" href="#resume">
+          <Link className="hover:text-[#A78BFA] transition-colors duration-300" href="#resume">
             Resume
           </Link>
         </div>
