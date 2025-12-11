@@ -49,7 +49,7 @@ const projects = [
     desktopImage: "/Framez-Desktop.JPG",
     mobileImage: "/Framez-Mobile.png",
     name: "Framez Mobile Social App",
-    description:
+    description1:
       "Framez is a mobile-first social platform built with React Native, designed for sharing moments with clarity and simplicity. It captures the essence of a modern social feed: real-time updates, fluid navigation, and clean interface structure. Users can create posts, browse a communal feed, and view their own profile with all personal activity displayed elegantly. The build integrates secure authentication and persistent sessions, backed by a real-time database layer to keep the experience responsive and alive. While core features like posting, feed rendering, and profile views are already functional, the project continues to evolve with polishing, performance tuning, and deeper backend integration. Framez stands as a growing testament to mobile craftsmanship with merging UI discipline, real-time data handling, and end-to-end user flows into one cohesive app.",
     cardDescription:
       "Framez is a social mobile app built with React Native, offering real-time posting, a shared feed, and user profiles...",

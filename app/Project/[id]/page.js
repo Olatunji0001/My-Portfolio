@@ -25,7 +25,7 @@ export default function ProjectPage() {
           <h3 className="nav-list mb-4 font-semibold md:text-2xl  text-xl">
             Description
           </h3>
-          <div className="leading-relaxed">
+          <div className="leading-[35px]">
           {monarch.description}
 
           </div>
