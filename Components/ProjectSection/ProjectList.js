@@ -45,12 +45,12 @@ const ProjectList = () => {
   };
 
   return (
-    <div className="w-full min-h-screen overflow-hidden ">
+    <div className="w-full md:min-h-screen overflow-hidden ">
       {/* header */}
      
       {/* main container*/}
       <motion.div 
-        className="relative h-[700px] md:h-[700px] max-w-6xl mx-auto"
+        className="relative h-[500px]  md:h-[700px] max-w-6xl mx-auto"
         drag="x"
         dragConstraints={{ left: 0, right: 0 }}
         dragElastic={0.2}
