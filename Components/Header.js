@@ -17,7 +17,7 @@ export default function Header() {
       <div className="relative flex justify-between md:max-w-[100%] items-center">
       <Link className="w-[15%] flex items-center" href="/">
         <h1 className="test-font tracking-wider text-[24px] font-extrabold text-[#FFFFFF] ">
-          Sagittaerys!
+          sagittaerys!
         </h1>
           <div>⚡</div>
       </Link>
@@ -32,6 +32,10 @@ export default function Header() {
 
           <Link className="hover:text-[#A78BFA] transition-colors duration-300" href="#about">
             About
+          </Link>
+
+          <Link className="hover:text-[#A78BFA] transition-colors duration-300" href="#experience">
+            Experience
           </Link>
 
           <Link className="hover:text-[#A78BFA] transition-colors duration-300" href="#projects">
@@ -119,6 +123,13 @@ export default function Header() {
             onClick={() => setIsOpen(false)}
           >
             About
+          </Link>
+          <Link
+            href="#experience"
+            className="hover:text-[#A78BFA] block px-3 py-2"
+            onClick={() => setIsOpen(false)}
+          >
+            Experience
           </Link>
           <Link
             href="#projects"

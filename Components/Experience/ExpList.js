@@ -8,7 +8,7 @@ const ExperienceSection = () => {
       <div className="mb-10 text-center">
         <h2 className="font-heading text-[24px] md:text-[45px] text-white font-extrabold">My Experience</h2>
         <p className="text-[14px] md:text-[14px] text-[#A78BFA] font-semibold">
-          My Professional Experience.
+          Professional Experience.
         </p>
       </div>
 
