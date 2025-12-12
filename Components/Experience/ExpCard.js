@@ -41,7 +41,7 @@ const ExperienceCard = ({ experience, isLast }) => {
 
         {/* role and year */}
         <div className="space-y-3">
-          <h3 className="text-xl font-medium ">{experience.role}</h3>
+          <h3 className="md:text-xl text-l font-medium ">{experience.role}</h3>
           <div className="mt-1 flex items-center gap-2 text-sm ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -65,14 +65,14 @@ const ExperienceCard = ({ experience, isLast }) => {
         </div>
 
         {/* description */}
-        <p className="">{experience.description}</p>
+        <p className="md:text-[17px] text-[13px]">{experience.description}</p>
 
         {/* skills */}
         <div className="flex flex-wrap gap-2">
           {experience.skills.map((skill, index) => (
             <div
               key={index}
-              className="rounded-full border border-[#A78BFA] px-3 py-1 text-sm"
+              className="rounded-full border md:text-[17px] text-[13px] border-[#A78BFA] px-3 py-1 text-sm"
             >
               {skill}
             </div>

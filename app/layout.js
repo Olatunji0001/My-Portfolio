@@ -1,25 +1,25 @@
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/Components/Header";
 import Footer from "@/Components/Footer";
 import SmoothScrolling from "@/Components/SmoothScrolling";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata = {
   title: "Olamilekan Aremu | Creative Software Developer",
   icons: {
     icon: '/favicon.png',
   },
-  description: "sagittaerys_",
+  description: "I'm Olamilekan Aremu, a mobile and web developer who enjoys turning ideas into clean, functional, and responsive interfaces.",
 };
 
 export default function RootLayout({ children }) {
@@ -39,9 +39,7 @@ export default function RootLayout({ children }) {
         />
       </head>
 
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body>
       
         <Header />
         <SmoothScrolling />
