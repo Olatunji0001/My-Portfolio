@@ -8,7 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 export default function Footer(){
   return(
     <div className="container font-mono text-center mt-10 p-5 md:p-10 text-white">
-          <p className="nav-list">Copyright © 2025 Olamilekan Aremu -  <span className="test-font">sagittaerys!⚡.</span></p>
+          <p className="nav-list">Copyright © 2025 Olamilekan Aremu -  <span className="test-font text-md">sagittaerys!⚡.</span></p>
 
           <div className="flex justify-center gap-4 mt-5">
             <a href="mailto:aremu0235@gmail.com"

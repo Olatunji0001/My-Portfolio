@@ -36,12 +36,12 @@ const ExperienceCard = ({ experience, isLast }) => {
               <path d="M10 18h4"></path>
             </svg>
           </div>
-          <span className="text-lg font-semibold ">{experience.company}</span>
+          <span className="text-lg md:text-xl font-semibold ">{experience.company}</span>
         </div>
 
         {/* role and year */}
         <div className="space-y-3">
-          <h3 className="md:text-xl text-l font-medium ">{experience.role}</h3>
+          <h3 className="md:text-xl text-lg font-medium ">{experience.role}</h3>
           <div className="mt-1 flex items-center gap-2 text-sm ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ const ExperienceCard = ({ experience, isLast }) => {
         </div>
 
         {/* description */}
-        <p className="md:text-[17px] text-[13px]">{experience.description}</p>
+        <p className="md:text-[17px] leading-[30px] text-[13px]">{experience.description}</p>
 
         {/* skills */}
         <div className="flex flex-wrap gap-2">

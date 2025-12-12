@@ -69,3 +69,32 @@ body {
   display: none !important;
 }
 
+
+/* Swipe Arrows Animation */
+@keyframes arrowLeft {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-6px); }
+}
+
+@keyframes arrowRight {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(6px); }
+}
+
+@keyframes swipeFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-arrow-left {
+  animation: arrowLeft 1.3s ease-in-out infinite;
+}
+
+.animate-arrow-right {
+  animation: arrowRight 1.3s ease-in-out infinite;
+}
+
+.animate-swipe-fade {
+  animation: swipeFadeIn 1.2s ease forwards;
+}
+
