@@ -15,7 +15,7 @@ export default function Intro(){
               </div>
 
               <div className="text-center mx-auto my-4 md:text-[19px] text-[14px] intro-description md:max-w-[793px]">
-                  <p>I've built Web and Mobile applications across the E-commerce, Saas, Fintech, Tourism, and Web3 industries, making use of Modern technologies like Next.js, React, Typescript, Tailwind, Node.js and a growing understanding of the software development lifecycle.</p>
+                  <p>I've built Web and Mobile applications across the E-commerce, Saas, Fintech, Tourism, and Web3 industries, making use of modern technologies like Next.js, React, Typescript, Tailwind, Node.js and a growing understanding of the software development lifecycle.</p>
               </div>
 
             <Link className="mx-auto" href= "#contact">
