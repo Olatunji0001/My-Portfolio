@@ -27,7 +27,7 @@ export default function AboutMe() {
           Outside of code, I’m often diving headfirst into mythological or historical canons, scribbling down startup ideas I may or may not launch, or refining my favorite side projects.
         </p>
 
-        <button  onClick={ () => window.open('/Olamilekan Aremu CV II.pdf', '_blank') } className="rounded-full nav-list hover:bg-[#A78BFA] mx-auto mt-4 text-[14px] border border-[#A78BFA] w-[164px] h-[41px] hover:scale-105 transition-transform duration-300">
+        <button  onClick={ () => window.open('/Olamilekan Aremu CV III.pdf', '_blank') } className="rounded-full nav-list hover:bg-[#A78BFA] mx-auto mt-4 text-[14px] border border-[#A78BFA] w-[164px] h-[41px] hover:scale-105 transition-transform duration-300">
                   Download Resume
         </button>
 
