@@ -103,4 +103,4 @@ const ProjectCard = ({ project, position, index, currentIndex, onClick }) => {
 };
 
 
-export default ProjectCard;
+export default ProjectCard; 

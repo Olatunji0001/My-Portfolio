@@ -1,21 +1,43 @@
 const experiences = [
   {
     id: 1,
-    company: "Safara Travels & Tours, Abuja NG",
-    role: "Frontend Engineer",
+    company: "GOMYCODE, Nigeria",
+    role: "Full-Stack Software Engineering Program",
     year: "2025",
-    description: "Collaborated with a team to build Safara Magazine, Nigeria's first digital travel, tourism, and lifestyle platform connecting destinations and creating memories for international travelers. Built a mobile-first, magazine-style web application using Next.js, TypeScript, and Tailwind CSS, featuring immersive swipeable content feeds, interactive destination discovery engines, and integrated booking systems. Implemented responsive design patterns for seamless cross-device experiences, created reusable UI components for destination cards, cultural content sections, and trip planning interfaces. Developed advanced filtering systems for travel hotspots, accommodation searches, and experience bookings. Integrated payment gateways, social sharing functionality, and offline content access features to enhance user engagement and conversion rates.",
+    description:
+      "Completed an intensive software engineering program focused on backend and full-stack development. Built scalable REST APIs using Node.js and Express, implemented authentication systems (JWT), structured MongoDB databases, and developed responsive frontend applications using React and Next.js. Strengthened understanding of system architecture, clean code principles, and production-ready application design.",
 
-    skills: ["Next.js", "TypeScript", "TailwindCSS", "React", "Responsive Design", "API Integration", "Payment Gateway Integration", "Mobile-First Development"]
+    skills: [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "REST APIs",
+      "JWT Authentication",
+      "React",
+      "Next.js",
+      "Git",
+    ],
   },
+
   {
-  id: 2,
-  company: "NexaPay, Lagos NG",
-  role: "Mobile Engineer",
-  year: "2025",
-  description: "Worked on the NexaPay mobile fintech app using React Native. Built core user flows for airtime, data bundles, bill payments, and other in-app services. Improved UI/UX consistency, integrated secure API endpoints, and optimized performance for smoother transactions and real-time updates.",
-  skills: ["React Native", "Expo", "Javascript", "REST APIs", "UI/UX Optimization", "State Management", "Mobile Performance"]
-},
+    id: 2,
+    company: "Vendora (Multi-Store E-commerce Platform)",
+    role: "Founder & Backend Engineer",
+    year: "2026",
+    description:
+      "Architected and built a multi-store e-commerce backend system enabling multiple sellers to manage products, weight-based delivery pricing, and store-level payouts. Designed scalable APIs using Express and NestJS, implemented role-based access control, integrated payment gateways, and structured delivery fee logic across regions. Focused on clean architecture, maintainable service layers, and production-ready deployment strategy.",
+
+    skills: [
+      "Node.js",
+      "Express",
+      "NestJS",
+      "MongoDB",
+      "RBAC",
+      "Payment Integration",
+      "System Architecture",
+      "Next.js",
+    ],
+  },
 ];
 
 export default experiences;

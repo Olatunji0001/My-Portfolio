@@ -17,7 +17,7 @@ export default function Header() {
       <div className="relative flex justify-between md:max-w-[100%] items-center">
       <Link className="w-[15%] flex items-center" href="/">
         <h1 className="test-font tracking-wider text-[24px] font-extrabold text-[#FFFFFF] ">
-          sagittaerys!
+          Tee Jay
         </h1>
           <div>⚡</div>
       </Link>
@@ -60,14 +60,14 @@ export default function Header() {
             </button>
           </Link>
 
-          <a href="https://github.com/sagittaerys" target="_blank" rel="noopener noreferrer">
+          <Link href="https://github.com/Olatunji0001" target="_blank" rel="noopener noreferrer">
 
           <button className="name px-3 py-1 text-[#C1C1C1] hover:text-white  flex items-center gap-3">
               <div> <IoLogoGithub className="text-[30px]" /> </div>
               <div> github</div>
           </button>
 
-          </a>
+          </Link>
 
         </div>
       </div>

@@ -1,156 +1,135 @@
-const FullStackSkills = [ 
+const BackendSkills = [
+  // 🔥 Backend Core
   {
     id: 1,
-    name: "HTML5",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+    name: "Node.js",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+    category: "backend"
   },
   {
     id: 2,
-    name: "CSS3",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+    name: "Express.js",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+    category: "backend"
   },
   {
     id: 3,
-    name: "JavaScript",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+    name: "NestJS",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg",
+    category: "backend"
   },
   {
     id: 4,
-    name: "React",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+    name: "MongoDB",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    category: "database"
   },
   {
     id: 5,
-    name: "React Native",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+    name: "TypeScript",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    category: "backend"
   },
+
+  // ⚙️ Tools & Version Control
   {
     id: 6,
-    name: "Next.js",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+    name: "Git",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    category: "tools"
   },
   {
     id: 7,
-    name: "Tailwind CSS",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+    name: "GitHub",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    category: "tools"
   },
+
+  // 🎨 Frontend (Supporting Skills)
   {
     id: 8,
-    name: "Bootstrap",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+    name: "React",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    category: "frontend"
   },
   {
     id: 9,
-    name: "Node.js",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+    name: "Next.js",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    category: "frontend"
   },
   {
     id: 10,
-    name: "Express.js",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+    name: "Tailwind CSS",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    category: "frontend"
   },
-  {
+
+  //duplicate
+   {
     id: 11,
-    name: "MongoDB",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+    name: "Node.js",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+    category: "backend"
   },
   {
     id: 12,
-    name: "Git",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+    name: "Express.js",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+    category: "backend"
   },
   {
     id: 13,
-    name: "GitHub",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+    name: "NestJS",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg",
+    category: "backend"
   },
   {
     id: 14,
-    name: "TypeScript",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+    name: "MongoDB",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    category: "database"
   },
   {
     id: 15,
-    name: "Redux Toolkit",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
+    name: "TypeScript",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    category: "backend"
   },
 
-  // duplicated
+  // ⚙️ Tools & Version Control
   {
     id: 16,
-    name: "React Native",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+    name: "Git",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    category: "tools"
   },
   {
     id: 17,
-    name: "HTML5",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+    name: "GitHub",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    category: "tools"
   },
+
+  // 🎨 Frontend (Supporting Skills)
   {
     id: 18,
-    name: "CSS3",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+    name: "React",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    category: "frontend"
   },
   {
     id: 19,
-    name: "JavaScript",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+    name: "Next.js",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    category: "frontend"
   },
   {
     id: 20,
-    name: "React",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-  },
-  {
-    id: 21,
-    name: "Next.js",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
-  },
-  {
-    id: 22,
     name: "Tailwind CSS",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-  },
-  {
-    id: 23,
-    name: "Bootstrap",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
-  },
-  {
-    id: 24,
-    name: "Node.js",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-  },
-  {
-    id: 25,
-    name: "Express.js",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
-  },
-  {
-    id: 26,
-    name: "MongoDB",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-  },
-  {
-    id: 27,
-    name: "Git",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
-  },
-  {
-    id: 28,
-    name: "GitHub",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-  },
-  {
-    id: 29,
-    name: "TypeScript",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-  },
-  {
-    id: 30,
-    name: "Redux Toolkit",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    category: "frontend"
   }
 ];
 
-export default FullStackSkills;
+export default BackendSkills;

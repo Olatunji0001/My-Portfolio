@@ -7,10 +7,10 @@ export default function Intro(){
         <div className="intro bg-[url('/tile.png')] bg-repeat bg-[length:32px_32px] bg-center  w-full my-7 p-3 h-[100%] text-[#FFFFFF] flex flex-col py-7 rounded-full mx-auto">
 
               <div className="image mt-3 mx-auto">
-                  <Image className="rounded-full" src= "/Chibi Me!.png" width={202} height={197} alt="sagittaerys"/>
+                  <Image className="rounded-full" src= "/favicon.png" width={202} height={197} alt="sagittaerys"/>
               </div>
               <div className="name text-center py-3 space-y-2">
-                  <h2 className="text-[28px] md:text-[63px] font-bold">Olamilekan Aremu</h2>
+                  <h2 className="text-[28px] md:text-[63px] font-bold">Musbau Olatunji</h2>
                   <p className="text-[14px] md:text-[26px] text-[#A78BFA] font-semibold">Creative Software Developer</p>
               </div>
 

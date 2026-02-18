@@ -3,54 +3,62 @@ import Image from "next/image";
 
 export default function AboutMe() {
   return (
-    <div id="about" className="container p-5 md:p-10" >
+    <div id="about" className="container p-5 md:p-10">
       <div className="name text-center py-3 space-y-2">
-        <h2 className="text-[24px] md:text-[45px] text-white font-extrabold">About Me</h2>
+        <h2 className="text-[24px] md:text-[45px] text-white font-extrabold">
+          About Me
+        </h2>
         <p className="text-[14px] md:text-[14px] text-[#A78BFA] font-semibold">
-          Get to know me
+          Backend Developer • Express • NestJS
         </p>
       </div>
-      <div id="resume" className="fade-in contents space-y-7 my-4 md:text-[17px] text-[13px] flex flex-col gap-3 md:max-w-[840px] mx-auto text-center text-white">
+
+      <div
+        id="resume"
+        className="fade-in contents space-y-7 my-4 md:text-[17px] text-[13px] flex flex-col gap-3 md:max-w-[840px] mx-auto text-center text-white"
+      >
         <p>
-          Hi! I'm <span className="text-[#A78BFA]">Olamilekan</span>, a software developer who enjoys turning ideas into clean, functional, and responsive interfaces.
+          Hi! I'm <span className="text-[#A78BFA]">Olatunji</span>, a
+          backend-focused developer who builds scalable and well-structured
+          server-side applications using Express and NestJS.
         </p>
 
         <p>
-          I’ve always been fascinated by the idea of codes, that feeling of being able to build things that actually matter resonates with me on a very deep level. Maybe it’s because, in some way, it feels like we’re tapping into the raw concept of creation itself.
-          </p>  
-          
-        <p>
-          Right now, I’m focused on sharpening my fullstack skills: working with APIs, serverless backends, and designing UIs that feel effortless to use. There’s something strangely addictive about getting it all to click.
+          Backend engineering is my priority. I enjoy designing RESTful APIs,
+          structuring databases, handling authentication and authorization, and
+          building systems that are clean, maintainable, and production-ready. I
+          think deeply about architecture, performance, and long-term
+          scalability.
         </p>
 
         <p>
-          Outside of code, I’m often diving headfirst into mythological or historical canons, scribbling down startup ideas I may or may not launch, or refining my favorite side projects.
+          I work primarily with Node.js, Express, and NestJS — building
+          multi-store e-commerce backends, payment integrations, role-based
+          access systems, and service-layer architectures. I focus on writing
+          code that doesn’t just work, but can grow without becoming messy.
         </p>
 
-        <button  onClick={ () => window.open('/Olamilekan Aremu CV III.pdf', '_blank') } className="rounded-full nav-list hover:bg-[#A78BFA] mx-auto mt-4 text-[14px] border border-[#A78BFA] w-[164px] h-[41px] hover:scale-105 transition-transform duration-300">
-                  Download Resume
+        <p>
+          While backend is my strength, I also understand frontend development
+          using React and Next.js. This allows me to operate comfortably as a
+          full-stack developer when necessary and design APIs that frontend
+          applications can consume efficiently.
+        </p>
+
+        <p>
+          Outside of coding, I’m refining backend architectures, improving my
+          system design skills, and building projects that go beyond basic CRUD
+          operations.
+        </p>
+
+        <button
+          onClick={() =>
+            window.open("/Olatunji_Backend_Developer_1Page_Resume.pdf")
+          }
+          className="rounded-full nav-list hover:bg-[#A78BFA] mx-auto mt-4 text-[14px] border border-[#A78BFA] w-[164px] h-[41px] hover:scale-105 transition-transform duration-300"
+        >
+          Download Resume
         </button>
-
-        <div className="h-[250px] relative my-15 flex flex-col w-full  group">
-            <div className="absolute top-0 left-[20%] bg-white px-2 pt-2 -rotate-12  rounded-lg overflow-hidden transition-all duration-500 group-hover:-rotate-12 group-hover:-translate-x-4 group-hover:scale-105">
-
-              <div className="w-[200px] h-[200px]">
-                  <Image className="object-cover rounded-lg w-full h-full" src="/sage_2.jpg" width={200} height={200} alt="sagittaerys" />
-              </div>
-
-              <span className="text-xs flex justify-center py-1 pb-3 italic text-black w-full text-center">sagittaerys_</span>
-            </div>
-
-            <div className="absolute top-10 right-[20%] bg-white px-2 pt-2 rotate-12 rounded-lg overflow-hidden transition-all duration-500 group-hover:rotate-12 group-hover:translate-x-4 group-hover:scale-105">
-
-              <div className="w-[200px] h-[200px]">
-                  <Image className="object-cover rounded-lg w-full h-full" src="/sage_.jpg" width={200} height={200} alt="sagittaerys" />
-              </div>
-
-              <span className="text-xs flex justify-center py-1 pb-3 italic text-black w-full text-center">@sagittaric</span>
-            </div>
-        </div>
-
       </div>
     </div>
   );
