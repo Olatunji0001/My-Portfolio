@@ -15,7 +15,7 @@ const projects = [
       "CSS",
       "GSAP",
     ],
-    visitProject: "https://sagittaerys-portfolio.vercel.app/",
+    visitProject: "https://my-portfolio-wine-delta-20.vercel.app/",
   },
   {
     id: 2,
